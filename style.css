@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* São váriaveis onde se aplica nas demais configurações */
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+.light {
+  /* configuração para a segunda versão (clara) da página*/
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+}
+
+body {
+  /*
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+*/
+
+  /* uma forma simplificada de formartar /*
+
+  /*background: color image repeat position/size */
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin: 8px;
+}
+/*Botão*/
+#switch {
+  position: relative; /*ele permite que qualquer coisa que tiver absoluto na configuração "#switch button", fique certinho*/
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%; /*Estrategia de alinhar objetos absoluto, primeiramente informa "transform: translateY(-50%)" e depois o "top"*/
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+/*troca de botão ou seja liga e desliga o modo de exibição>>> Light Mode / Dark Mode*/
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  /*configuração do track do button*/
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/*links*/
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex; /*Trabalha em todos os elementos da caixa, colocando um do lado do outro, de forma flexivel*/
+  align-items: center; /*Determina o alinhamento do texto dentro do bloco*/
+  justify-content: center; /*Determina o alinhamento do bloco/caixa na página*/
+  padding: 16px 24px; /*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+  background: var(--surface-color); /*cor de fundo do bloco/botão */
+  border: 1px solid var(--stroke-color); /*Tamanho da borda + cor*/
+  border-radius: 8px; /*Arredondamento de bordas*/
+  backdrop-filter: blur(4px); /*Aplica o efeito de desfocado*/
+  -webkit-backdrop-filter: blur(
+    4px
+  ); /*Devido algumas versões de Browser é necessário se aplicar o -webkit*/
+  text-decoration: none; /*Tirar o Sublinhado do Texto*/
+  font-weight: 500; /*Tamanho da Fonte*/
+  transition: background 0.02s; /*1° é propriedade que será transicionada ex.: all (Tudo) / 2° enquanto tempo */
+}
+
+ul li a:hover {
+  /* :hover >>> pseudo-selector - Aplica efeitos ao passar o moude em cima*/
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+#social-link {
+  display: flex; /*Ativa a função "GAP"*/
+  /* padding: 24px 0*/
+  justify-content: center;
+  font-size: 24px; /*Altera o tamanho de tudo que há dentro da "Div" informada*/
+}
+
+#social-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.02s;
+  border-radius: 50%;
+}
+
+#social-link a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
