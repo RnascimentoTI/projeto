@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto Rnascimento </h1>
+<h1 align="center"> Projeto RNascimento </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="Projeto RNascimento " src="./assets/Capa.jpeg" width="100%">
+  <img alt="Projeto RNascimento" src=".github/Capa.jpeg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
