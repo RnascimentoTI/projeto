@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O RNascimento é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://https://rnascimentoti.github.io/projeto/)
+- [Acesse o projeto finalizado, online](https://https://rnascimentoti.github.io/projeto)
 
 ## :memo: Licença
 
