@@ -1,13 +1,6 @@
 <h1 align="center"> Projeto Cartão de Visitas Online </h1>
 
 <p align="center">
-
-<a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-</p>
-
-<p align="center">
   <img alt="Projeto RNascimento" src=".github/Capa.jpeg" width="100%">
 </p>
 
