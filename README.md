@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="Projeto RNascimento " src=".github/preview.jpg" width="100%">
+  <img alt="Projeto RNascimento " src=".github/Capa.jpeg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
